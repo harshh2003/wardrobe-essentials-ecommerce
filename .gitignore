@@ -1,4 +1,14 @@
 uploads/
 node_modules/
 .vscode/
-                        v bmmmm 
+.env
+.env.*
+!.env.example
+config/database.php
+*.log
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+razorpay_config.php
+mail_config.php
