@@ -213,34 +213,238 @@ include 'includes/navbar.php';
             color:#777;
         }
 
+@media (max-width: 768px){
 
-        @media(max-width:768px){
+    body{
+        overflow-x:hidden;
+    }
 
-            .account-page{
-                margin:25px auto;
-            }
+    .account-page{
+        width:100%;
+        margin:25px auto;
+        padding:100px 15px 30px;
+    }
 
-            .account-grid{
-                grid-template-columns:1fr;
-            }
 
-            .profile-box{
-                grid-template-columns:1fr;
-            }
+    /* Account Header */
 
-            .account-header{
-                padding:25px;
-            }
+    .account-header{
+        padding:24px 20px;
+        border-radius:14px;
+        margin-bottom:18px;
+    }
 
-            .account-header h1{
-                font-size:26px;
-            }
+    .account-header h1{
+        font-size:25px;
+        line-height:1.3;
+        margin-bottom:8px;
+    }
 
-            .account-content{
-                padding:20px;
-            }
+    .account-header p{
+        font-size:14px;
+        line-height:1.5;
+    }
 
-        }
+
+    /* Main Layout */
+
+    .account-grid{
+        display:flex;
+        flex-direction:column;
+        gap:18px;
+    }
+
+
+    /* Account Menu */
+
+    .account-menu{
+        width:100%;
+        padding:12px;
+        border-radius:14px;
+
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:8px;
+    }
+
+    .account-menu a{
+        margin:0;
+        padding:12px 10px;
+        font-size:14px;
+        text-align:center;
+        border-radius:9px;
+    }
+
+
+    /* Account Content */
+
+    .account-content{
+        width:100%;
+        padding:20px 16px;
+        border-radius:14px;
+    }
+
+    .account-content h2{
+        font-size:21px;
+        margin-top:0;
+        margin-bottom:18px;
+    }
+
+
+    /* Profile */
+
+    .profile-box{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:12px;
+        margin-bottom:28px;
+    }
+
+    .profile-item{
+        padding:15px;
+        border-radius:10px;
+    }
+
+    .profile-item small{
+        font-size:13px;
+        margin-bottom:5px;
+    }
+
+    .profile-item strong{
+        font-size:15px;
+
+        /* Prevent long email from breaking layout */
+        overflow-wrap:anywhere;
+        word-break:break-word;
+    }
+
+
+    /* Recent Orders */
+
+    .orders-title{
+        margin-bottom:15px;
+    }
+
+    .order-card{
+        padding:16px;
+        margin-bottom:12px;
+        border-radius:12px;
+    }
+
+
+    /* Order Header */
+
+    .order-top{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+        align-items:center;
+        margin-bottom:12px;
+    }
+
+    .order-id{
+        font-size:15px;
+    }
+
+
+    /* Status */
+
+    .status{
+        padding:5px 10px;
+        font-size:12px;
+    }
+
+
+    /* Order Information */
+
+    .order-details{
+        font-size:14px;
+        line-height:1.8;
+    }
+
+
+    /* View Order Button */
+
+    .view-order{
+        width:100%;
+        text-align:center;
+        margin-top:12px;
+        padding:11px 15px;
+        font-size:14px;
+        border-radius:8px;
+    }
+
+
+    /* No Orders */
+
+    .no-orders{
+        padding:22px 15px;
+        font-size:14px;
+        line-height:1.5;
+    }
+
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 480px){
+
+    .account-page{
+        margin:0 auto;
+        padding:95px 10px 30px;
+    }
+
+    .account-header{
+        padding:20px 16px;
+    }
+
+    .account-header h1{
+        font-size:22px;
+    }
+
+    .account-header p{
+        font-size:13px;
+    }
+
+
+    .account-menu{
+        padding:10px;
+        gap:6px;
+    }
+
+    .account-menu a{
+        padding:11px 6px;
+        font-size:13px;
+    }
+
+
+    .account-content{
+        padding:18px 13px;
+    }
+
+    .account-content h2{
+        font-size:19px;
+    }
+
+
+    .profile-item{
+        padding:14px;
+    }
+
+
+    .order-card{
+        padding:14px;
+    }
+
+    .order-id{
+        font-size:14px;
+    }
+
+    .order-details{
+        font-size:13px;
+    }
+
+}
 
     </style>
 
